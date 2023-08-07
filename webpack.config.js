@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const CopyPlugin = require("copy-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
@@ -27,7 +29,8 @@ const htmlWebpackPlugins = pages.map((name) => {
 });
 
 module.exports = {
-  mode: "development",
+  mode: "production",
+  // mode: "development",
   entry: {
     bundle: path.resolve(__dirname, "src/js/bundle.js"),
   },
@@ -35,6 +38,10 @@ module.exports = {
     filename: "js/[name].js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "img/[hash][ext][query]",
+  },
+  performance: {
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000,
   },
 
   module: {
@@ -77,15 +84,16 @@ module.exports = {
   plugins: [
     ...htmlWebpackPlugins,
     new MiniCssExtractPlugin({ filename: "css/main.css" }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: "src/img", // Source folder
-          to: "img", // Destination folder in 'dist'
-        },
-      ],
-    }),
+    new BundleAnalyzerPlugin(),
+    // new CopyPlugin({
+    //   patterns: [
+    //     {
+    //       from: "src/img", // Source folder
+    //       to: "img", // Destination folder in 'dist'
+    //     },
+    //   ],
+    // }),
   ],
 
-  watch: true,
+  // watch: true,
 };
