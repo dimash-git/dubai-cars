@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="sidebar-overlay">
+      <div class="sidebar">
+        <a href="javascript:void(0)" class="btn-close"><svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="current"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.03345 31.7996C2.24893 31.8453 1.47736 31.5844 0.881422 31.0722C-0.293807 29.89 -0.293807 27.9806 0.881422 26.7984L26.6151 1.06461C27.8374 -0.0791771 29.7555 -0.0155946 30.8993 1.20675C31.9336 2.31211 31.9939 4.01107 31.0404 5.1869L5.15513 31.0722C4.56694 31.5771 3.80768 31.8374 3.03345 31.7996Z"
+              fill="current"
+            />
+            <path
+              d="M28.7367 31.7996C27.9416 31.7962 27.1796 31.4806 26.615 30.9206L0.881177 5.18674C-0.207612 3.91529 -0.0595851 2.00182 1.21187 0.912936C2.34667 -0.0588693 4.02028 -0.0588693 5.15498 0.912936L31.0403 26.6467C32.2623 27.7908 32.3255 29.709 31.1814 30.931C31.1359 30.9796 31.0889 31.0266 31.0403 31.0721C30.7267 31.3448 30.3604 31.5501 29.9641 31.6752C29.5678 31.8004 29.1501 31.8427 28.7367 31.7996Z"
+              fill="current"
+            />
+          </svg>
+        </a>
+        <ul>
+          <li><a href="arenda.html">Аренда</a></li>
+          <li><a href="lizing.html">Лизинг</a></li>
+          <li><a href="about-us.html">О компании</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="qa.html">FAQ</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <header class="header {{#unless isIndex}}inner{{/unless}}">
+      <div class="header-left">
+        <div class="header__logo">
+          <a href="index.html">
+            {{#if isIndex}}
+              <img src="img/logo.svg" alt="Sunday" />
+            {{else}}
+              <img src="img/logo-black.svg" alt="Sunday" />
+            {{/if}}
+          </a>
+        </div>
+        <div class="nav-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="header-right">
+        <div class="header-wrapper">
+          <div class="header__item">+971-58-533-7773</div>
+          <div class="header__item lang">
+            <span class="active">RU</span>
+            |
+            <span>ENG</span>
+          </div>
+          <div class="header__item currency">
+            <span class="tooltip">Валюта</span>
+            <div class="list">
+              <ul>
+                <li>USD</li>
+                <li>AED</li>
+              </ul>
+              <span class="dropdown"><svg
+                  width="9"
+                  height="7"
+                  viewBox="0 0 9 7"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.5 7L0.602887 0.249999L8.39711 0.25L4.5 7Z"
+                    fill="#ECCF62"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <button class="header__btn" data-micromodal-trigger="lead-modal">
+          Заказать звонок
+        </button>
+      </div>
+    </header>
+  </body>
+</html>

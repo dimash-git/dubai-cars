@@ -1,0 +1,195 @@
+{{> partials/header title="Аренда 1" }}
+
+    <main class="inner">
+      <div class="container">
+        <div class="breadcrumbs">
+          ГЛАВНАЯ — АРЕНДА — Ferrari F8 Tributo Spider
+        </div>
+      </div>
+      <section class="rent">
+        <div class="container">
+          <h3 class="title">Ferrari F8 Tributo Spider</h3>
+          <div class="rent-view">
+            <div>
+              <div id="main-carousel" class="splide" aria-label="Main carousel">
+                <div class="splide__arrows">
+                  <button class="splide__arrow splide__arrow--prev">
+                    <img src="img/arrow-left.svg" alt="" />
+                  </button>
+                  <button class="splide__arrow splide__arrow--next">
+                    <img src="img/arrow-right.svg" alt="" />
+                  </button>
+                </div>
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/slider/car1.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car2.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car3.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car4.webp" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                id="thumbnail-carousel"
+                class="splide"
+                aria-label="The carousel with thumbnails"
+              >
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <img src="img/slider/car1.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car2.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car3.webp" alt="" />
+                    </li>
+                    <li class="splide__slide">
+                      <img src="img/slider/car4.webp" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="preorder">
+                <div class="subtitle">БРОНИРОВАНИЕ</div>
+                <span>Автомобиль</span>
+                <div class="subtitle">Ferrari F8 Tributo Spider</div>
+                <form action="mail.php">
+                  <label for="dates">Период аренды</label>
+                  <input type="dates" id="dates" name="dates" />
+                  <label for="name">Ваше имя</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Укажите имя"
+                  />
+                  <label for="phone">Контактный телефон</label>
+                  <input
+                    type="phone"
+                    id="phone"
+                    name="phone"
+                    placeholder="ХХХ ХХХ - хх - хх"
+                  />
+                  <div class="price">
+                    Итоговая стоимость — <span id="number" data-price="4500">4500</span>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button class="btn-submit">Забронировать</button>
+                  </div>
+                  <span class="disclaimer"
+                    >Нажимая кнопку «Забронировать», вы принимаете условия
+                    обработки персональных данных.</span
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="rent-description">
+            <div>
+              <div class="subtitle">ОПИСАНИЕ И ХАРАКТЕРИСТИКИ</div>
+              <p>
+                Этот автомобиль не просто Ferrari F8 Spider, это Ferrari F8
+                Spider с установленным производительным выхлопом и ЭБУ, хотя
+                двигатель дышит полной жизнью. Индивидуальные 21-дюймовые диски
+                в сочетании с низкой подвеской делают внешний вид автомобиля
+                выдающимся. Откройте крышу и почувствуйте рулевое управление и
+                ускорение вождения с Ferrari F8 tributo Spider.
+              </p>
+              <div class="rent-features">
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/engine.svg" alt="" />
+                    <span>3.9-л V8</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/horse.svg" alt="" /> <span>800 HP</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/direction.svg" alt="" />
+                    <span>Задний</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/speed.svg" alt="" />
+                    <span> Mакс: 350+ км/ч</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/transmission.svg" alt="" />
+                    <span> Робот</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/petrol.svg" alt="" />
+                    <span> Бензин</span>
+                  </div>
+                </div>
+                <div class="rent-features__card">
+                  <div>
+                    <img src="img/icons/timer.svg" alt="" />
+                    <span>0–100 км/ч: 2.6 сек</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="rent-features__contract">
+                <img src="img/icons/contract.svg" alt="" />
+              </div>
+              <span>Условия аренды</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalogue" style="margin-top: 100px">
+        <div class="container">
+          <h3 class="title">Подобрать другой автомобиль</h3>
+          <div class="filters">
+            <div class="filters__btn">
+              <svg
+                width="54"
+                height="54"
+                viewBox="0 0 54 54"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.4167 0.75V30.4125C14.1245 31.0151 15.6033 32.1326 16.6494 33.6109C17.6954 35.0893 18.2572 36.8557 18.2572 38.6667C18.2572 40.4777 17.6954 42.2441 16.6494 43.7224C15.6033 45.2008 14.1245 46.3182 12.4167 46.9208V53.25H6.58334V46.9208C4.87554 46.3182 3.39669 45.2008 2.35064 43.7224C1.3046 42.2441 0.742859 40.4777 0.742859 38.6667C0.742859 36.8557 1.3046 35.0893 2.35064 33.6109C3.39669 32.1326 4.87554 31.0151 6.58334 30.4125V0.75H12.4167ZM29.9167 0.75V7.07917C31.6245 7.68176 33.1033 8.79924 34.1494 10.2776C35.1954 11.7559 35.7572 13.5223 35.7572 15.3333C35.7572 17.1443 35.1954 18.9107 34.1494 20.3891C33.1033 21.8674 31.6245 22.9849 29.9167 23.5875V53.25H24.0833V23.5875C22.3755 22.9849 20.8967 21.8674 19.8506 20.3891C18.8046 18.9107 18.2429 17.1443 18.2429 15.3333C18.2429 13.5223 18.8046 11.7559 19.8506 10.2776C20.8967 8.79924 22.3755 7.68176 24.0833 7.07917V0.75H29.9167ZM47.4167 0.75V30.4125C49.1245 31.0151 50.6033 32.1326 51.6494 33.6109C52.6954 35.0893 53.2572 36.8557 53.2572 38.6667C53.2572 40.4777 52.6954 42.2441 51.6494 43.7224C50.6033 45.2008 49.1245 46.3182 47.4167 46.9208V53.25H41.5833V46.9208C39.8755 46.3182 38.3967 45.2008 37.3506 43.7224C36.3046 42.2441 35.7429 40.4777 35.7429 38.6667C35.7429 36.8557 36.3046 35.0893 37.3506 33.6109C38.3967 32.1326 39.8755 31.0151 41.5833 30.4125V0.75H47.4167Z"
+                  fill="#B7BDB3"
+                />
+              </svg>
+            </div>
+            <div class="filters__description">Выбери свой автомобиль</div>
+            <select class="filters__select" name="" id="">
+              <option>Показать все категории</option>
+              <option value="price-down">По убыванию цены</option>
+            </select>
+            <select class="filters__select" name="" id="">
+              <option>Выбрать марку</option>
+              <option value="price-down">BMW</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+{{> partials/footer }}

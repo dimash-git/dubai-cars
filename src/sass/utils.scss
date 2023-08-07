@@ -1,0 +1,27 @@
+/* Fonts */
+$main-font: "Unbounded", sans-serif;
+
+/* Variables */
+$xs: "480px";
+$sm: "640px";
+$md: "768px";
+$lg: "1024px";
+$xl: "1280px";
+$mac13: "1440px";
+$xxl: "1536px";
+
+// Colors
+$light-gray: rgb(245, 245, 245);
+$golden: #eccf62;
+$olive: #7a7d68;
+$dark-olive: #b7bdb3;
+$light-olive: #aeaeae;
+
+@mixin transition {
+  transition: 0.3s all ease-in-out;
+}
+
+@mixin large-text {
+  font-size: 32px;
+  font-weight: 700;
+}
